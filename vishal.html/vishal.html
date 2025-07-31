@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arunachal University of Studies - Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        header img {
+            height: 80px;
+        }
+        
+        h1 {
+            margin: 10px 0;
+            font-size: 22px;
+        }
+        
+        .banner {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .banner img {
+            max-width: 90%;
+            height: auto;
+        }
+        
+        .form-section {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        input[type="text"] {
+            padding: 10px;
+            width: 250px;
+            font-size: 16px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .result {
+            display: none;
+            text-align: center;
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        
+        .result strong {
+            display: inline-block;
+            width: 160px;
+            text-align: left;
+        }
+        
+        .disclaimer {
+            background-color: #1e4d7d;
+            color: white;
+            padding: 15px;
+            font-size: 13px;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://results.arunachaluniversity.ac.in/image/logo%202.png" alt="University Logo"><br>
+        <h1>ARUNACHAL UNIVERSITY OF STUDIES</h1>
+        <p>NH-52, Knowledge City, District-Namsai, Arunachal Pradesh, Pin Code-792103</p>
+    </header>
+
+    <h2 style="background-color: teal; color: white; padding: 10px; text-align: center;">Examination Results</h2>
+
+    <div class="banner">
+        <img src="https://results.arunachaluniversity.ac.in/image/logo%202.png" alt="University Logo"><br>
+        <h1>Diploma in Industrial Safety Management</h1>
+    </div>
+
+    <div class="form-section">
+        <p><strong>Enter Your Enrollment No.</strong></p>
+        <input type="text" id="enroll" placeholder="e.g., C140004556">
+        <button onclick="showResult()">Submit</button>
+    </div>
+
+    <div class="result" id="resultBox">
+        <p><strong>Student Name:</strong> Vishal Kumar</p>
+        <p><strong>Father's Name:</strong> Dharampal Singh</p>
+        <p><strong>Enrollment No:</strong> C140008520</p>
+        <p><strong>Roll No:</strong> ES30037</p>
+        <p><strong>Course:</strong> Diploma in Industrial Safety Management</p>
+        <p><strong>Result:</strong> <span style="color: green;">Pass</span></p>
+    </div>
+
+    <div class="disclaimer">
+        <strong>Disclaimer:</strong> This message contains confidential information and is intended only for the individual named. If you are not the recipient of this information, you are advised not to disseminate, distribute, or copy this information.
+        The results published on the website are for immediate information to the examinees and cannot be treated as an original Statement of Grade. Original Statement of Grade will be issued by the University separately.
+    </div>
+
+    <script>
+        function showResult() {
+            var enroll = document.getElementById("enroll").value.trim();
+            if (enroll === "C140008520") {
+                document.getElementById("resultBox").style.display = "block";
+            } else {
+                alert("Enrollment number not found. Please enter a valid number.");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
